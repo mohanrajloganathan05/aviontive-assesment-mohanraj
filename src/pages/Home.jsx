@@ -1,18 +1,26 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import TaskItem from "../components/TaskItem";
+import "../Styles/Home.css";
 
 const Home = ({ tasks, onDelete, onToggle }) => (
-  <div style={{ padding: "20px" }}>
-    <h1>Welcome...</h1>
-    <p>Here are your tasks:</p>
+  <div className="home">
+    <h1>Welcome to Task Mate.!</h1><br />
+    <center>
+        <div className="tasks">
+            <p className="title"> Your tasks:</p>
 
-    {tasks.length === 0 ? 
-        <p>No tasks added yet</p> : 
-        tasks.map(task => <TaskItem key={task.id} task={task} onDelete={onDelete} onToggle={onToggle} />)
-    }
-
-    <Link to="/add"><button >+ Add New Task</button></Link>
+            {tasks.length === 0 ? 
+                <p>No tasks added yet</p> : 
+                tasks.map(task => <TaskItem key={task.id} task={task} onDelete={onDelete} onToggle={onToggle} />)
+            }
+            <br />
+            <br />
+        </div>
+    </center>
+   
+   
+    <Link to="/add"><button className="add" >+ Add New Task</button></Link>
   </div>
 );
 

@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import "../Styles/AddTask.css"
 
 const AddTask = ({ onAdd }) => {
   const [title, setTitle] = useState("");
@@ -15,7 +16,7 @@ const AddTask = ({ onAdd }) => {
   };
 
   return (
-    <div>
+    <div className="add-div">
       <h1>Add New Task</h1>
       <form onSubmit={handleSubmit}>
         <input type="text" placeholder="Task title" value={title} onChange={e => setTitle(e.target.value)}  />
