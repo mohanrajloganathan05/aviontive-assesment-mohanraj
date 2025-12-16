@@ -1,10 +1,11 @@
 import React from "react";
+import "../Styles/TaskItem.css";
 
 const TaskItem = ({ task, onToggle, onDelete }) => (
-  <div>
+  <div className="items"> 
     <input type="checkbox" checked={task.completed} onChange={() => onToggle(task.id)} />
     <span>{task.title}</span>
-    <button onClick={() => onDelete(task.id)}>Delete</button>
+    <button className="delete" onClick={() => onDelete(task.id)}>Delete</button>
   </div>
 );
 
