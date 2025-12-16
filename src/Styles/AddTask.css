@@ -1,0 +1,32 @@
+.add-div{
+    font-family: "Poppins", sans-serif;  
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.add-div form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.add-div input{
+    width: 220px;
+    height: 60px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.add-div button{
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    width: 130px;
+    height: 40px;
+    margin-top: 30px;
+}
+

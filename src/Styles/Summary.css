@@ -1,0 +1,36 @@
+.summary-div{
+    font-family: "Poppins", sans-serif;  
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+.details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.pending{
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    
+}
+p{
+    font-weight: 400;
+}
+
+h2{
+    font-weight: 600;
+}
+    
+    
+
+.completed{
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}

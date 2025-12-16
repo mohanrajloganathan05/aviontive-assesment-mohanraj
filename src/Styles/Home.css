@@ -1,0 +1,37 @@
+.home{
+  
+    background-color: #ffffff;
+    font-family: "Poppins", sans-serif;  
+    padding: 30px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.home h1{
+    font-size:50px;
+    font-weight: 100;
+}
+
+.title{
+    font-weight: bold;
+}
+.tasks{
+    height: 300px;
+    border: 1px;
+    width: 40%;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.add{
+    
+        background-color: black;
+        color: white;
+        border-radius: 10px;
+        padding: 5px;
+        width: 150px;
+        height: 50px;
+        margin-top: 30px;
+    
+}
