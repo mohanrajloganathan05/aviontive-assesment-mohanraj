@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import Navbar from "./components/Navbar";
 import AddTask from "./pages/AddTask";
 import Summary from "./pages/Summary"; 
+import "./App.css"
 
 function App() {
   const [tasks, setTasks] = useState(() => JSON.parse(localStorage.getItem("tasks")) || []);
@@ -23,14 +24,17 @@ function App() {
   );
 
   return (
+    <div className="container">
     <BrowserRouter>
-     <Navbar />
-      <Routes>
-        <Route path="/" element={<Home tasks={tasks} onDelete={deleteTask} onToggle={toggleComplete} />} />
-        <Route path="/add" element={<AddTask onAdd={addTask} />} />
-        <Route path="/summary" element={<Summary tasks={tasks} onToggle={toggleComplete} onDelete={deleteTask} />} />
-      </Routes>
-    </BrowserRouter>
+      <Navbar />
+          <Routes>
+            <Route path="/" element={<Home tasks={tasks} onDelete={deleteTask} onToggle={toggleComplete} />} />
+            <Route path="/add" element={<AddTask onAdd={addTask} />} />
+            <Route path="/summary" element={<Summary tasks={tasks} onToggle={toggleComplete} onDelete={deleteTask} />} />
+          </Routes>
+      </BrowserRouter>
+    </div>
+    
   );
 }
 
