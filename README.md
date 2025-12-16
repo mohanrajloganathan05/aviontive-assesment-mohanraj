@@ -1,4 +1,4 @@
-##Simple Task Manager – React Skill Assessment
+##Simple Task Manager-React Skill Assessment
 
 This project is a Simple Task Manager Application developed as part of the React Intern Skill Assessment for the Aviontive by Mohanraj.
 
